@@ -1,0 +1,47 @@
+#form-cine_contacto{
+    margin-top: 25px;
+}
+
+.nomape{
+    padding: 7px 10px;
+}
+
+.msj{
+    padding: 18px 11px;
+}
+
+.btnsHelp{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.btnLim{
+    background-color: rgb(1, 88, 55);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bolder;
+    margin-right: 5px;
+}
+
+.btnEnv{
+    background-color: rgb(1, 88, 55);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+
+#sec-cine-result p{
+    background-color: #E83845;
+    color: #fff;
+    font-weight: bolder;
+    border: none;
+    padding: 20px 200px;
+    border-radius: 15px;
+    margin-top: 30px;
+
+}

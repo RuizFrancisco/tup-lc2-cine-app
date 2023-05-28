@@ -1,0 +1,145 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    /* Declaro variables CSS con colores principales */
+    --color-theme: #FFCE30;
+    --color-active: #288BA8;
+    --color-back-active: #746AB0;
+    --color-back-inactive: #c4c6c9;
+    --color-titulos: #E83845;
+    --color-texto-blanco: #FFF;
+    --color-gradient: linear-gradient(
+        to right,
+        var(--color-theme),
+        var(--color-back-active));
+}
+
+body {
+    background-color: #e0e0e0;
+    color: #1d1d1d;
+}
+
+.contenedorPeliculas { /*Se encuentra levemente desplazado a la izquierda*/
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    max-width: 1000px;
+    align-content: center;
+    grid-gap: 40px;
+}
+
+.contenedorPeliculas p {
+    font-size: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    color: var(--color-active);
+    margin-bottom: 0px;
+}
+
+.contenedorPeliculas h3 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.contenedorPeliculas img {
+    width: 100%;
+    height: 65%;
+    margin-bottom: 5px;
+    border-radius: 15px;
+}
+
+#success {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+#error {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+#warning {
+    background-color: #ffc107;
+    color: #fff;
+    border: none;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+
+
+
+/*BOTONES*/
+
+.paginacion {
+    position: relative;
+    /*bottom: ;*/
+    top: 8px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.paginacion button {
+    cursor: auto;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 50px;
+    width: 180px;
+    background-color: rgba(40, 1, 68, 0.945);
+    color: #fff;
+    border-radius: 50px;
+    /*font-family: ;*/
+    font-weight: bolder;
+    transition: .3s ease all;
+}
+
+.paginacion button:hover {
+    background-color: var(--color-back-active);
+}
+
+/*Estilos Generales Botones Favoritos*/
+.button {
+    background: #7f8c8d;
+    color: var(--color-texto-blanco);
+    display: inline; /*Nose si va*/
+    font-size: 11.5px;
+    font-weight: 600;
+    margin: 5px 25px; 
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0px 3px 0px #373c3c;
+    border: none;
+}
+
+/*
+.button span {
+    margin-right: 10px;
+}
+*/
+
+.button.medium {
+    width: 75%;
+}
+
+.button.radius {
+    border-radius: 50px;
+}
+
+.button:hover {
+    box-shadow: 0px 0px 0px;
+}

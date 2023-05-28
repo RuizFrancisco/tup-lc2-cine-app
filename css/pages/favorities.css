@@ -1,0 +1,55 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    /* Declaro variables CSS con colores principales */
+    --color-theme: #FFCE30;
+    --color-active: #288BA8;
+    --color-back-active: #746AB0;
+    --color-back-inactive: #c4c6c9;
+    --color-titulos: #E83845;
+    --color-texto-blanco: #FFF;
+    --color-gradient: linear-gradient(
+        to right,
+        var(--color-theme),
+        var(--color-back-active));
+}
+
+main h2{ /*Dejamos espaciado el titulo, asi bajando el div de peliculas favoritas*/
+    margin-bottom: 50px;
+}
+
+
+.contenedorPeliculasFavoritas { /*Se encuentra levemente desplazado a la izquierda*/
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    max-width: 1000px;
+    align-content: center;
+    gap: 50px 75px;
+}
+
+.contenedorPeliculasFavoritas p {
+    font-size: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    color: var(--color-active);
+    margin-bottom: 0px;
+}
+
+.contenedorPeliculasFavoritas h3 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.contenedorPeliculasFavoritas img {
+    width: 60%;
+    height: 65%;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
+}
+

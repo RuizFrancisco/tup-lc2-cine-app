@@ -7,6 +7,7 @@
   <title>TUP LC2 - TP Integrador - Cine</title>
   <!-- Estilos CSS -->
   <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css\pages\index.css">
 
 </head>
 
@@ -14,6 +15,7 @@
   <header>
     <h1>
       <!--Titulo Cabecera-->
+      <img src="img\IconoCine.png" alt="icono">
       <span>Cartelera de Cine</span>
     </h1>
     <nav>
@@ -31,29 +33,74 @@
     <section id="form-movie-new">
       <!--Seccion para agregar una palicula favorita por codigo-->      
       <form action="">
+        <p>Agregar Película Favorita por Código:</p>
         <input>
         <button id="btnAgregar" name="btnAgregar" onclick="" type="submit">Agregar</button>  
       </form>
     </section>
+    <br>
     <section id="sec-messages">
       <!--Seccion para mensajes-->
-      <p id="mensj1" class="">Película agregada con éxito</p>
+      <p id="success" class="">Película agregada con éxito</p>
 
-      <p id="mensj2" class="">Error: La Película seleccionada no se encuentra en la API o se produjo un
+      <p id="error" class="">Error: La Película seleccionada no se encuentra en la API o se produjo un
         error al consultar</p>
 
-      <p id="mensj3" class="">La Película ingresada ya se encuentra almacenada</p>
+      <p id="warning" class="">La Película ingresada ya se encuentra almacenada</p>
     </section>
     <section id="sec_peliculas">
       <!--Seccion visualizacion de peliculas-->
       <div class="contenedorPeliculas" id="contenedorPeliculas">
-        <img src="https://image.tmdb.org/t/p/w500//fcFMd3HdyX7r5gtFwVnn2qr5Yhq.jpg">
-        <h3>Creed III</h3>
-        <p><b>Codigo: </b>677179</p>
-        <p><b>Título original: </b>Creed III</p>
-        <p><b>Idioma original: </b>en</p>
-        <p><b>Año: </b>2023-03-01</p>
-        <a href="#">Agregar a Favoritos</a>
+        <div>
+          <img src="https://es.web.img3.acsta.net/c_310_420/pictures/23/02/06/17/15/3568166.jpg">
+          <h3>Super Mario Bros. La pelicula</h3>
+          <p><b>Codigo: </b>502356</p>
+          <p><b>Título original: </b>The Super Mario Bros. Movie</p>
+          <p><b>Idioma original: </b>en</p>
+          <p><b>Año: </b>2023-04-05</p><br>
+          <button class="button medium radius">Agregar a Favoritos</button>
+        </div>
+      
+        <div>
+          <img src="https://images.justwatch.com/poster/304667074/s718/shazam-2.%7Bformat%7D">
+          <h3>¡Shazam! La furia de los dioses</h3>
+          <p><b>Codigo: </b>594767</p>
+          <p><b>Título original: </b>Shazam! Fury of the Gods</p>
+          <p><b>Idioma original: </b>en</p>
+          <p><b>Año: </b>2023-03-15</p><br>
+          <button class="button medium radius">Agregar a Favoritos</button>
+        </div>
+
+        <div>
+          <img src="https://es.web.img3.acsta.net/pictures/22/11/03/17/38/4821956.jpg">
+          <h3>La niña de la comunion</h3>
+          <p><b>Codigo: </b>1008005</p>
+          <p><b>Título original: </b>La niña de la comunion</p>
+          <p><b>Idioma original: </b>es</p>
+          <p><b>Año: </b>2023-02-10</p><br>
+          <button class="button medium radius">Agregar a Favoritos</button>
+        </div>
+
+        <div>
+          <img src="https://pics.filmaffinity.com/El_gato_con_botas_El_aultimo_deseo-528008999-large.jpg">
+          <h3>Gato con Botas: El ultimo deseo</h3>
+          <p><b>Codigo: </b>315162</p>
+          <p><b>Título original: </b>Puss in Boots: The Last Wish</p>
+          <p><b>Idioma original: </b>en</p>
+          <p><b>Año: </b>2022-12-07</p><br>
+          <button class="button medium radius">Agregar a Favoritos</button>
+        </div>
+
+        <div>
+          <img src="https://image.tmdb.org/t/p/w500//fcFMd3HdyX7r5gtFwVnn2qr5Yhq.jpg">
+          <h3>Creed III</h3>
+          <p><b>Codigo: </b>677179</p>
+          <p><b>Título original: </b>Creed III</p>
+          <p><b>Idioma original: </b>en</p>
+          <p><b>Año: </b>2023-03-01</p><br>
+          <button class="button medium radius">Agregar a Favoritos</button>
+        </div>
+      
       </div>
     </section>
     <section id="sec_paginador_peliculas">

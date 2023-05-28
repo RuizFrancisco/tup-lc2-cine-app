@@ -37,6 +37,7 @@ header {
   top: 0;
   width: 100%;
   background-image: url('../img/FondoCine6.webp');
+  background-repeat: no-repeat;                     /*Para que la imagen no se repita*/
   border-radius: 0 0% 20px 20px ;
   border-bottom: 2px solid var(--color-active);
 }
@@ -47,6 +48,7 @@ nav > ul {
 }
 nav li {
   flex: 0 0 auto;
+  padding-right: 3px;   /*Separa las opciones de menu entre si*/
 }
 nav li a {
   display: block;
@@ -57,6 +59,7 @@ nav li a {
   font-weight: bold;
   color: var(--color-texto-blanco);
   background-color: var(--color-back-inactive);
+  border-radius: 10px 10px 0 0;       /*Redondea los bordes superiores (los dos primeros son la esquina izq y der superiores, mientras que los dos ultimos son la esquina izq y der inferior)*/
 }
 nav li.current-page a {
   color: var(--color-theme);
@@ -75,6 +78,7 @@ h1 {
   text-align: center;
   margin: 0;
   color: var(--color-theme);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); /*Le agregamos un sombrado al h1*/
 }
 h1 > img {
   width: 70px;
@@ -85,6 +89,7 @@ h2 {
   color: var(--color-titulos);
   margin: 16px 0;
   text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 h3 {
   color: var(--color-theme);
