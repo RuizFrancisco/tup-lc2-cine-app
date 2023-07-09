@@ -83,3 +83,11 @@ main h2{ /*Dejamos espaciado el titulo, asi bajando el div de peliculas favorita
 .button:hover {
     box-shadow: 0px 0px 0px;
 }
+
+#warning {
+    background-color: #ffc107;
+    color: #fff;
+    border: none;
+    padding: 20px 100px;
+    border-radius: 15px;
+}

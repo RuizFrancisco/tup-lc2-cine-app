@@ -176,3 +176,15 @@ main p {
 .verde{
   background-color:#28a745 ;
 }
+
+/*MENSAJE DE CARGA*/
+.cargando {
+  display: none; /* Por defecto, oculto el mensaje de carga */
+  text-align: center;
+  margin: 20px;
+}
+
+.cargando i {
+  font-size: 24px;
+  margin-right: 5px;
+}

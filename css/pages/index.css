@@ -54,7 +54,7 @@ body {
     background-color: #28a745;
     color: #fff;
     border: none;
-    padding: 20px;
+    padding: 20px 100px;
     border-radius: 15px;
 }
 
@@ -62,7 +62,7 @@ body {
     background-color: #dc3545;
     color: #fff;
     border: none;
-    padding: 20px;
+    padding: 20px 100px;
     border-radius: 15px;
 }
 
@@ -70,7 +70,7 @@ body {
     background-color: #ffc107;
     color: #fff;
     border: none;
-    padding: 20px;
+    padding: 20px 100px;
     border-radius: 15px;
 }
 
